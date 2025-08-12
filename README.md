@@ -74,5 +74,17 @@ Looks like Gowin GW1NZ series.
 
 </details>
 
+**J9** - FPGA JTAG
+
+| #| Name |
+|--|------|
+| 1| TCK |
+| 2| TMS |
+| 3| TDI |
+| 4| TDO |
+| 5| +V |
+| 6| GND |
+| 7| - |
+
 #### MCU
 Looks like an STM32 clone from GigaDevice.
