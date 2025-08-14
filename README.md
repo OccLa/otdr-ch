@@ -18,22 +18,22 @@ Looks like TI ADS901 or THS1031.
 <details>
 <summary>ADC pinout</summary>
 
-| Pin # | Name | FPGA pin # || Pin # | Name | FPGA pin # |
-|-------|------|-----------|-|-------|------|------------|
-| 1  | +VS    |       || 28 | +VS   |  |
-| 2  | LVDD   |       || 27 | IN    | R19->TIA |
-| 3  | D0 LSB |   23  || 26 | CM    |  |
-| 4  | D1     |   22  || 25 | LnBy  |  |
-| 5  | D2     |   21  || 24 | REFB  | C7->GND; C5->... |
-| 6  | D3     |   20  || 23 | NC    | R23->GND; R22->... |
-| 7  | D4     |   19  || 22 | REFT  | C3->GND |
-| 8  | D5     |   18  || 21 | LpBy  | R11 DNI |
-| 9  | D6     |   17  || 20 | GND   |  |
-| 10 | D7     |   16  || 19 | GND   |  |
-| 11 | D8     |   15  || 18 | +VS   |  |
-| 12 | D9 MSB |   14  || 17 | Pwrdn | R5->GND |
-| 13 | GND    |       || 16 | _OE_  | R4->GND |
-| 14 | GND    |       || 15 | CLK   | 13 |
+| Pin # | ADS901 | THS1031 | FPGA pin # || Pin # | ADS901 | THS1031 | FPGA pin # |
+|-------|------|-----------|-----------|-|-------|------|------|------------|
+| 1  | +VS    | AGND |   GND || 28 | +VS   | AVDD    | +V |
+| 2  | LVDD   | DVDD |   +V  || 27 | IN    | AIN     | R19->TIA |
+| 3  | D0 LSB | I/O0 |   23  || 26 | CM    | VREF    |  |
+| 4  | D1     | I/O1 |   22  || 25 | LnBy  | REFBS   | GND |
+| 5  | D2     | I/O2 |   21  || 24 | REFB  | REFBF   | C7->GND; C5->... |
+| 6  | D3     | I/O3 |   20  || 23 | NC    | MODE    | R23->GND; R22->... |
+| 7  | D4     | I/O4 |   19  || 22 | REFT  | REFTF   | C3->GND |
+| 8  | D5     | I/O5 |   18  || 21 | LpBy  | REFTS   | R11 DNI |
+| 9  | D6     | I/O6 |   17  || 20 | GND   | CLAMPIN | GND |
+| 10 | D7     | I/O7 |   16  || 19 | GND   | CLAMP   | GND |
+| 11 | D8     | I/O8 |   15  || 18 | +VS   | REFSENSE| GND |
+| 12 | D9 MSB | I/O9 |   14  || 17 | Pwrdn | WR      | R5->GND |
+| 13 | GND    |  OVR |       || 16 | _OE_  | _OE_    | R4->GND |
+| 14 | GND    | DGND |   GND || 15 | CLK   | CLK     | 13 |
 
 </details>
 
