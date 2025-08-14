@@ -5,17 +5,39 @@ https://www.google.com/search?q=TN1700+site%3Aaliexpress.com
 
 ![PCB](img/TN1700_pcb_2.png "PCB TN1700")
 
-#### APD(avalanche photodiode) power supply
+### APD(avalanche photodiode) power supply
 https://www.sg-micro.com/product/SGM41282C<br>
 https://www.sg-micro.com/rect/assets/7a6f5550-29b0-4f92-9198-7deb495df53e/SGM41282C.pdf<br>
 
-#### TIA(transimpedance amplifier) & ADC amplifier
+### TIA(transimpedance amplifier) & ADC amplifier
 https://www.ti.com/lit/ds/symlink/opa657.pdf
 
-#### ADC
+### ADC
 Looks like TI ADS901 or THS1031.
 
-#### FPGA
+<details>
+<summary>ADC pinout</summary>
+
+| Pin # | Name | FPGA pin # || Pin # | Name | FPGA pin # |
+|-------|------|-----------|-|-------|------|------------|
+| 1  | +VS    |       || 28 | +VS   |  |
+| 2  | LVDD   |       || 27 | IN    |  |
+| 3  | D0 LSB |   23  || 26 | CM    |  |
+| 4  | D1     |   22  || 25 | LnBy  |  |
+| 5  | D2     |   21  || 24 | REFB  |  |
+| 6  | D3     |   20  || 23 | NC    |  |
+| 7  | D4     |   19  || 22 | REFT  |  |
+| 8  | D5     |   18  || 21 | LpBy  |  |
+| 9  | D6     |   17  || 20 | GND   |  |
+| 10 | D7     |   16  || 19 | GND   |  |
+| 11 | D8     |   15  || 18 | +VS   |  |
+| 12 | D9 MSB |   14  || 17 | Pwrdn |  |
+| 13 | GND    |       || 16 | _OE_  |  |
+| 14 | GND    |       || 15 | CLK   | 13 |
+
+</details>
+
+### FPGA
 Looks like Gowin GW1NZ series.
 
 <details>
@@ -86,5 +108,5 @@ Looks like Gowin GW1NZ series.
 | 6| GND |
 | 7| - |
 
-#### MCU
+### MCU
 Looks like an STM32 clone from GigaDevice.
