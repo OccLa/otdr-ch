@@ -21,18 +21,18 @@ Looks like TI ADS901 or THS1031.
 | Pin # | Name | FPGA pin # || Pin # | Name | FPGA pin # |
 |-------|------|-----------|-|-------|------|------------|
 | 1  | +VS    |       || 28 | +VS   |  |
-| 2  | LVDD   |       || 27 | IN    |  |
+| 2  | LVDD   |       || 27 | IN    | R19->TIA |
 | 3  | D0 LSB |   23  || 26 | CM    |  |
 | 4  | D1     |   22  || 25 | LnBy  |  |
-| 5  | D2     |   21  || 24 | REFB  |  |
-| 6  | D3     |   20  || 23 | NC    |  |
-| 7  | D4     |   19  || 22 | REFT  |  |
-| 8  | D5     |   18  || 21 | LpBy  |  |
+| 5  | D2     |   21  || 24 | REFB  | C7->GND; C5->... |
+| 6  | D3     |   20  || 23 | NC    | R23->GND; R22->... |
+| 7  | D4     |   19  || 22 | REFT  | C3->GND |
+| 8  | D5     |   18  || 21 | LpBy  | R11 DNI |
 | 9  | D6     |   17  || 20 | GND   |  |
 | 10 | D7     |   16  || 19 | GND   |  |
 | 11 | D8     |   15  || 18 | +VS   |  |
-| 12 | D9 MSB |   14  || 17 | Pwrdn |  |
-| 13 | GND    |       || 16 | _OE_  |  |
+| 12 | D9 MSB |   14  || 17 | Pwrdn | R5->GND |
+| 13 | GND    |       || 16 | _OE_  | R4->GND |
 | 14 | GND    |       || 15 | CLK   | 13 |
 
 </details>
