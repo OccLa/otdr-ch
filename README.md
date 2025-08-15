@@ -73,33 +73,112 @@ Looks like an STM32 clone from GigaDevice.
 <details>
 <summary>MCU pinout</summary>
 
-| #| Con        |      | | #| Con  |      | | #| Con     |        | | #| Con  |        | 
-|--|------------|------|-|--|------|------|-|--|---------|--------|-|--|------|--------|
-| 1|            |  PE2 | |26|Reboot|  PA3 | |51|  CS_U10 |   PB12 | |76| J4-5 |  SWCLK/PA14 |
-| 2|            |  PE3 | |27| GND  |  VSS | |52|U9,10 CLK|SPI2_SCK| |77|         | PA15 |
-| 3|            |  PE4 | |28|      |  VDD | |53|U9,10 DO|SPI2_MISO| |78|         | PC10 |
-| 4|            |  PE5 | |29|      |  PA4 | |54|U9,10 DI|SPI2_MOSI| |79|         | PC11 |
-| 5|            |  PE6 | |30|      |  PA5 | |55|         |    PD8 | |80|         | PC12 |
-| 6|            | VBAT | |31|      |  PA6 | |56|         |    PD9 | |81|         | PD0 |
-| 7|            | PC13 | |32|      |  PA7 | |57|         |   PD10 | |82|         | PD1 |
-| 8| 32KHz  | OSC32_IN | |33|      |  PC4 | |58|         |   PD11 | |83|         | PD2 |
-| 9| 32KHz | OSC32_OUT | |34|      |  PC5 | |59|         |   PD12 | |84|         | PD3 |
-|10| GND        |  VSS | |35|      |  PB0 | |60|   CS_U9 |   PD13 | |85|         | PD4 |
-|11|            |  VDD | |36|      |  PB1 | |61|         |   PD14 | |86|         | PD5 |
-|12| 25MHz    | OSC_IN | |37|      | BOOT1| |62|         |   PD15 | |87|         | PD6 |
-|13| 25MHz   | OSC_OUT | |38|      |  PE7 | |63|         |    PC6 | |88|         | PD7 |
-|14| R70,C36,S1 | NRST | |39|      |  PE8 | |64| FPGA-39 |    PC7 | |89| FPGA-35 | PB3 |
-|15|            |  PC0 | |40|      |  PE9 | |65|         |    PC8 | |90| FPGA-34 | PB4 |
-|16|            |  PC1 | |41|      | PE10 | |66|         |    PC9 | |91| FPGA-32 | PB5 |
-|17|            |  PC2 | |42|      | PE11 | |67| FPGA-38 |    PA8 | |92| FPGA-31 | PB6 |
-|18|            |  PC3 | |43|      | PE12 | |68| J4-3    |  UA1_TX| |93| FPGA-30 | PB7 |
-|19|            |  VDD | |44|      | PE13 | |69| J4-2    |  UA1_RX| |94|         | BOOT0 |
-|20|            | VSSA | |45|      | PE14 | |70| Type-C |OTG_FS_DM| |95| FPGA-29 | PB8 |
-|21|            | VREF+| |46|      | PE15 | |71| Type-C |OTG_FS_DP| |96| FPGA-28 | PB9 |
-|22|            | VDDA | |47|      | PB10 | |72| J4-6 | SWDIO/PA13| |97|         | PE0 |
-|23|          |PA0/WKUP| |48|      | PB11 | |73|         | VCAP_2 | |98|         | PE1 |
-|24|            |  PA1 | |49|      |VCAP_1| |74|         |    VSS | |99|         | VSS |
-|25|            |  PA2 | |50|      |  VDD | |75| +V      |    VDD | |00| +V      | VDD |
+| #| Con        |------------|
+|--|------------|------------|
+| 1|            |  PE2 | 
+| 2|            |  PE3 | 
+| 3|            |  PE4 | 
+| 4|            |  PE5 | 
+| 5|            |  PE6 | 
+| 6|            | VBAT | 
+| 7|            | PC13 | 
+| 8| 32KHz      | OSC32_IN | 
+| 9| 32KHz      | OSC32_OUT | 
+|10| GND        |  VSS | 
+|11|            |  VDD | 
+|12| 25MHz      | OSC_IN | 
+|13| 25MHz      | OSC_OUT | 
+|14| R70,C36,S1 | NRST | 
+|15|            |  PC0 | 
+|16|            |  PC1 | 
+|17|            |  PC2 | 
+|18|            |  PC3 | 
+|19|            |  VDD | 
+|20|            | VSSA | 
+|21|            | VREF+ | 
+|22|            | VDDA | 
+|23|            | PA0/WKUP | 
+|24|            |  PA1 | 
+|25|            |  PA2 | 
+|**#**|**Con**|**------------**|
+|26| Reboot |  PA3 |
+|27|  GND   |  VSS |
+|28|        |  VDD |
+|29|        |  PA4 |
+|30|        |  PA5 |
+|31|        |  PA6 |
+|32|        |  PA7 |
+|33|        |  PC4 |
+|34|        |  PC5 |
+|35|        |  PB0 |
+|36|        |  PB1 |
+|37|        | BOOT1|
+|38|        |  PE7 |
+|39|        |  PE8 |
+|40|        |  PE9 |
+|41|        | PE10 |
+|42|        | PE11 |
+|43|        | PE12 |
+|44|        | PE13 |
+|45|        | PE14 |
+|46|        | PE15 |
+|47|        | PB10 |
+|48|        | PB11 |
+|49|        |VCAP_1|
+|50|        |  VDD |
+|**#**|**Con**|**------------**|
+|51|  CS_U10   |   PB12 |
+|52| U9,10 CLK |SPI2_SCK|
+|53| U9,10 DO  |SPI2_MISO|
+|54| U9,10 DI  |SPI2_MOSI|
+|55|           |    PD8 |
+|56|           |    PD9 |
+|57|           |   PD10 |
+|58|           |   PD11 |
+|59|           |   PD12 |
+|60|     CS_U9 |   PD13 |
+|61|           |   PD14 |
+|62|           |   PD15 |
+|63|           |    PC6 |
+|64|   FPGA-39 |    PC7 |
+|65|           |    PC8 |
+|66|           |    PC9 |
+|67|   FPGA-38 |    PA8 |
+|68|   J4-3    |  UA1_TX |
+|69|   J4-2    |  UA1_RX |
+|70|   Type-C  | OTG_FS_DM |
+|71|   Type-C  | OTG_FS_DP |
+|72|   J4-6    | SWDIO/PA13 |
+|73|           | VCAP_2 |
+|74|           |    VSS |
+|75|   +V      |    VDD |
+|**#**|**Con**|**------------**|
+|76| J4-5    |  SWCLK/PA14 |
+|77|         | PA15 |
+|78|         | PC10 |
+|79|         | PC11 |
+|80|         | PC12 |
+|81|         | PD0 |
+|82|         | PD1 |
+|83|         | PD2 |
+|84|         | PD3 |
+|85|         | PD4 |
+|86|         | PD5 |
+|87|         | PD6 |
+|88|         | PD7 |
+|89| FPGA-35 | PB3 |
+|90| FPGA-34 | PB4 |
+|91| FPGA-32 | PB5 |
+|92| FPGA-31 | PB6 |
+|93| FPGA-30 | PB7 |
+|94|         | BOOT0 |
+|95| FPGA-29 | PB8 |
+|96| FPGA-28 | PB9 |
+|97|         | PE0 |
+|98|         | PE1 |
+|99|         | VSS |
+|00| +V      | VDD |
+
 
 </details>
 
