@@ -55,7 +55,7 @@ Looks like Gowin GW1NZ series.
 | 8|      **PB0** | MCU-35 |
 | 9|      **PB1** | MCU-36 |
 |10|      **PB2** | MCU-37 |
-|11|              |        |
+|11|              | MCU-45 |
 |12|          VCC |    Pwr |
 |**#**|**---------------**|**--------**|
 |13|  **adc_clk** | ADC-15 |
@@ -79,7 +79,7 @@ Looks like Gowin GW1NZ series.
 |30|      **PB7** | MCU-93 |
 |31|      **PB6** | MCU-92 |
 |32|      **PB5** | MCU-91 |
-|33|              |        |
+|33| GCLKT_2/RPLL_T_in | 100Mhz |
 |34|      **PB4** | MCU-90 |
 |35|      **PB3** | MCU-89 |
 |36|         VCCX |    Pwr |
@@ -87,8 +87,8 @@ Looks like Gowin GW1NZ series.
 |37|          VCC |             Pwr |
 |38|              |          MCU-67 |
 |39|              |          MCU-64 |
-|40|              |                 |
-|41|              |                 |
+|40|              |          MCU-59 |
+|41|              |          MCU-46 |
 |42|        MODE1 |       R149->GND |
 |43|        MODE0 |       R146->GND |
 |44|    JTAGSEL_N |       R153->GND |
@@ -159,8 +159,8 @@ Looks like an STM32 clone from GigaDevice.
 |42|        | PE11 |
 |43|        | PE12 |
 |44|        | PE13 |
-|45|        | PE14 |
-|46|        | PE15 |
+|45| FPGA-11| PE14 |
+|46| FPGA-41| PE15 |
 |47|        | PB10 |
 |48|        | PB11 |
 |49|        |VCAP_1|
@@ -174,7 +174,7 @@ Looks like an STM32 clone from GigaDevice.
 |56|           |    PD9 |
 |57|           |   PD10 |
 |58|           |   PD11 |
-|59|           |   PD12 |
+|59|   FPGA-40 |   PD12 |
 |60|     CS_U9 |   PD13 |
 |61|           |   PD14 |
 |62|           |   PD15 |
