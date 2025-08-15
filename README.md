@@ -180,8 +180,8 @@ Looks like an STM32 clone from GigaDevice.
 |62|           |   PD15 |
 |63|           |    PC6 |
 |64|   FPGA-39 |    PC7 |
-|65|           |    PC8 |
-|66|           |    PC9 |
+|65|      SD-7 | PC8/SDIO_D0 |
+|66|      SD-8 | PC9/SDIO_D1 |
 |67|   FPGA-38 |    PA8 |
 |68|   J4-3    |  UA1_TX |
 |69|   J4-2    |  UA1_RX |
@@ -194,12 +194,12 @@ Looks like an STM32 clone from GigaDevice.
 |**#**|**Con**|**------------**|
 |76| J4-5    |  SWCLK/PA14 |
 |77|         | PA15 |
-|78|         | PC10 |
-|79|         | PC11 |
-|80|         | PC12 |
+|78|    SD-1 | PC10/SDIO_D2 |
+|79|    SD-2 | PC11/SDIO_D3 |
+|80|    SD-5 | PC12/SDIO_CK |
 |81|         | PD0 |
 |82|         | PD1 |
-|83|         | PD2 |
+|83|    SD-3 | PD2/SDIO_CMD |
 |84|         | PD3 |
 |85|         | PD4 |
 |86|         | PD5 |
