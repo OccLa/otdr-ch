@@ -43,20 +43,59 @@ Looks like Gowin GW1NZ series.
 <details>
 <summary>FPGA pinout</summary>
 
-| #| Name     | Con  | | #| Name       | Con    | | #| Name  | Con   | | #| Name      | Con    |
-|--|----------|------|-|--|------------|--------|-|--|-------|-------|-|--|-----------|--------|
-| 1|    VCCIO0|  Pwr | |13| **adc_clk**| ADC-15 | |25| VCCIO1|   Pwr | |37|       VCC |    Pwr |
-| 2|      VSS |  Gnd | |14|**adc_d[9]**| ADC-12 | |26|   VSS |   Gnd | |38|           | MCU-67 |
-| 3|      TCK | J9-1 | |15|**adc_d[8]**| ADC-11 | |27|**ld1**|   LD1 | |39|           | MCU-64 |
-| 4|      TMS | J9-2 | |16|**adc_d[7]**| ADC-10 | |28|**PB9**| MCU-96| |40|           |        |
-| 5|      TDI | J9-3 | |17|**adc_d[6]**|  ADC-9 | |29|**PB8**| MCU-95| |41|           |        |
-| 6|IOT9A/SCLK|      | |18|**adc_d[5]**|  ADC-8 | |30|**PB7**| MCU-93| |42|     MODE1 |        |
-| 7|      TDO | J9-4 | |19|**adc_d[4]**|  ADC-7 | |31|**PB6**| MCU-92| |43|     MODE0 |        |
-| 8|  **PB0** |MCU-35| |20|**adc_d[3]**|  ADC-6 | |32|**PB5**| MCU-91| |44| JTAGSEL_N |        |
-| 9|  **PB1** |MCU-36| |21|**adc_d[2]**|  ADC-5 | |33|       |       | |45|     READY |        |
-|10|  **PB2** |MCU-37| |22|**adc_d[1]**|  ADC-4 | |34|**PB4**| MCU-90| |46|      DONE |        |
-|11|          |      | |23|**adc_d[0]**|  ADC-3 | |35|**PB3**| MCU-89| |47|   GCLKT_0 |        |
-|12|      VCC |  Pwr | |24|    **ld2** |    LD2 | |36|  VCCX |   Pwr | |48| RECONFIG_N|        |
+|**#**|**Name**   |**Con** |
+|--|-------------:|--------|
+| 1|        VCCIO0|    Pwr |
+| 2|          VSS |    Gnd |
+| 3|          TCK |   J9-1 |
+| 4|          TMS |   J9-2 |
+| 5|          TDI |   J9-3 |
+| 6|   IOT9A/SCLK |        |
+| 7|          TDO |   J9-4 |
+| 8|      **PB0** | MCU-35 |
+| 9|      **PB1** | MCU-36 |
+|10|      **PB2** | MCU-37 |
+|11|              |        |
+|12|          VCC |    Pwr |
+|**#**|**---------------**|**--------**|
+|13|  **adc_clk** | ADC-15 |
+|14| **adc_d[9]** | ADC-12 |
+|15| **adc_d[8]** | ADC-11 |
+|16| **adc_d[7]** | ADC-10 |
+|17| **adc_d[6]** |  ADC-9 |
+|18| **adc_d[5]** |  ADC-8 |
+|19| **adc_d[4]** |  ADC-7 |
+|20| **adc_d[3]** |  ADC-6 |
+|21| **adc_d[2]** |  ADC-5 |
+|22| **adc_d[1]** |  ADC-4 |
+|23| **adc_d[0]** |  ADC-3 |
+|24|      **ld2** |    LD2 |
+|**#**|**---------------**|**--------**|
+|25|       VCCIO1 |    Pwr |
+|26|          VSS |    Gnd |
+|27|      **ld1** |    LD1 |
+|28|      **PB9** | MCU-96 |
+|29|      **PB8** | MCU-95 |
+|30|      **PB7** | MCU-93 |
+|31|      **PB6** | MCU-92 |
+|32|      **PB5** | MCU-91 |
+|33|              |        |
+|34|      **PB4** | MCU-90 |
+|35|      **PB3** | MCU-89 |
+|36|         VCCX |    Pwr |
+|**#**|**---------------**|**--------**|
+|37|          VCC |             Pwr |
+|38|              |          MCU-67 |
+|39|              |          MCU-64 |
+|40|              |                 |
+|41|              |                 |
+|42|        MODE1 |       R149->GND |
+|43|        MODE0 |       R146->GND |
+|44|    JTAGSEL_N |       R153->GND |
+|45|        READY |        R166->+V |
+|46|         DONE | R142,R143 to D1 |
+|47|      GCLKT_0 |                 |
+|48|   RECONFIG_N |        R151->+V |
 
 </details>
 
