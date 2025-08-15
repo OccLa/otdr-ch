@@ -94,8 +94,8 @@ Looks like an STM32 clone from GigaDevice.
 |17|            |  PC2 | |42|      | PE11 | |67| FPGA-38 |    PA8 | |92| FPGA-31 | PB6 |
 |18|            |  PC3 | |43|      | PE12 | |68| J4-3    |  UA1_TX| |93| FPGA-30 | PB7 |
 |19|            |  VDD | |44|      | PE13 | |69| J4-2    |  UA1_RX| |94|         | BOOT0 |
-|20|            | VSSA | |45|      | PE14 | |70|         |   PA11 | |95| FPGA-29 | PB8 |
-|21|            | VREF+| |46|      | PE15 | |71|         |   PA12 | |96| FPGA-28 | PB9 |
+|20|            | VSSA | |45|      | PE14 | |70| Type-C |OTG_FS_DM| |95| FPGA-29 | PB8 |
+|21|            | VREF+| |46|      | PE15 | |71| Type-C |OTG_FS_DP| |96| FPGA-28 | PB9 |
 |22|            | VDDA | |47|      | PB10 | |72| J4-6 | SWDIO/PA13| |97|         | PE0 |
 |23|          |PA0/WKUP| |48|      | PB11 | |73|         | VCAP_2 | |98|         | PE1 |
 |24|            |  PA1 | |49|      |VCAP_1| |74|         |    VSS | |99|         | VSS |
