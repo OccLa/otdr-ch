@@ -120,8 +120,8 @@ Looks like an STM32 clone from GigaDevice.
 
 | #| Con        |------------|
 |--|------------|------------|
-| 1|            |  PE2 | 
-| 2|            |  PE3 | 
+| 1|     OPM S1 |  PE2 | 
+| 2|     OPM S2 |  PE3 | 
 | 3|            |  PE4 | 
 | 4|            |  PE5 | 
 | 5|            |  PE6 | 
@@ -135,14 +135,14 @@ Looks like an STM32 clone from GigaDevice.
 |13| 25MHz      | OSC_OUT | 
 |14| R70,C36,S1 | NRST | 
 |15|            |  PC0 | 
-|16|            |  PC1 | 
-|17|            |  PC2 | 
-|18|            |  PC3 | 
+|16|   OPM R101 |  PC1 | 
+|17|OPM R135 U23|  PC2 | 
+|18| OPM R84 Q9 |  PC3 | 
 |19|            |  VDD | 
 |20|            | VSSA | 
 |21|            | VREF+ | 
 |22|            | VDDA | 
-|23|            | PA0/WKUP | 
+|23| OPM Q9 inA | PA0/WKUP | 
 |24|            |  PA1 | 
 |25|            |  PA2 | 
 |**#**|**Con**|**------------**|
@@ -219,8 +219,8 @@ Looks like an STM32 clone from GigaDevice.
 |94|         | BOOT0 |
 |95| FPGA-29 | PB8 |
 |96| FPGA-28 | PB9 |
-|97|         | PE0 |
-|98|         | PE1 |
+|97| LightLED| PE0 |
+|98|  OPM S0 | PE1 |
 |99|         | VSS |
 |00| +V      | VDD |
 
