@@ -9,8 +9,8 @@ https://www.google.com/search?q=TN1700+site%3Aaliexpress.com
 https://www.sg-micro.com/product/SGM41282C<br>
 https://www.sg-micro.com/rect/assets/7a6f5550-29b0-4f92-9198-7deb495df53e/SGM41282C.pdf<br>
 
-- **EN** - SGM41282C pin #2 -> FPGA pin #6 (R33(8K) & R32(20K)->GND)
-- **VS** - SGM41282C pin #4 -> ***TODO*** (R34(1K) & R35(100K)->GND)
+- **EN** - SGM41282C pin #2 -> FPGA pin #6 (R34(1K) & R35(100K)->GND)
+- **VS** - SGM41282C pin #4 -> ***TODO*** (R33(8K) & R32(20K)->GND)
 - **SVMON** - SGM41282C pin #5 -> T4
 - **TH** - SGM41282C pin #5 -> T5
 - **THXOR** - SGM41282C pin #5 -> T3
