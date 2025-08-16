@@ -9,6 +9,12 @@ https://www.google.com/search?q=TN1700+site%3Aaliexpress.com
 https://www.sg-micro.com/product/SGM41282C<br>
 https://www.sg-micro.com/rect/assets/7a6f5550-29b0-4f92-9198-7deb495df53e/SGM41282C.pdf<br>
 
+- **EN** - SGM41282C pin #2 -> FPGA pin #6 (R33(8K) & R32(20K)->GND)
+- **VS** - SGM41282C pin #4 -> ***TODO*** (R34(1K) & R35(100K)->GND)
+- **SVMON** - SGM41282C pin #5 -> T4
+- **TH** - SGM41282C pin #5 -> T5
+- **THXOR** - SGM41282C pin #5 -> T3
+
 ### TIA(transimpedance amplifier) & ADC amplifier
 https://www.ti.com/lit/ds/symlink/opa657.pdf
 
@@ -50,7 +56,7 @@ Looks like Gowin GW1NZ series.
 | 3|          TCK |   J9-1 |
 | 4|          TMS |   J9-2 |
 | 5|          TDI |   J9-3 |
-| 6|   IOT9A/SCLK |        |
+| 6|   IOT9A/SCLK |APD-PWR-EN|
 | 7|          TDO |   J9-4 |
 | 8|      **PB0** | MCU-35 |
 | 9|      **PB1** | MCU-36 |
