@@ -200,7 +200,7 @@ Looks like an STM32 clone from GigaDevice.
 |81|         | PD0 |
 |82|         | PD1 |
 |83|    SD-3 | PD2/SDIO_CMD |
-|84|         | PD3 |
+|84|    SD-9 | PD3 |
 |85|         | PD4 |
 |86|         | PD5 |
 |87|         | PD6 |
@@ -228,3 +228,10 @@ Looks like an STM32 clone from GigaDevice.
 | Con |      |       69 |        68 | GND |    76 |    72 | |
 | todo|      |USART1_RX | USART1_TX |     | SWCLK | SWDIO | |
 
+
+**J2** - micro SD slot
+|         # |       1 |       2 |         3|   4|        5|    6|        7|        8|    9|
+|:---------:|:-------:|:-------:|:--------:|:--:|:-------:|:---:|:-------:|:-------:|:---:|
+|      Name |      D2 |      D3 |      CMD | +V |     CLK | GND |      D0 |      D1 | Det |
+| MCU pin # |      78 |      79 |       83 |    |      80 |     |      65 |      66 |  84 |
+|  MCU Name | SDIO_D2 | SDIO_D3 | SDIO_CMD |    | SDIO_CK |     | SDIO_D0 | SDIO_D1 | PD3 |
