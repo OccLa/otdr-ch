@@ -167,8 +167,8 @@ Looks like an STM32 clone from GigaDevice.
 |44|        | PE13 |
 |45| FPGA-11| PE14 |
 |46| FPGA-41| PE15 |
-|47|        | PB10 |
-|48|        | PB11 |
+|47| Touch-SCL | PB10 |
+|48| Touch-SDA | PB11 |
 |49|        |VCAP_1|
 |50|        |  VDD |
 |**#**|**Con**|**------------**|
@@ -179,12 +179,12 @@ Looks like an STM32 clone from GigaDevice.
 |55|           |    PD8 |
 |56|           |    PD9 |
 |57|           |   PD10 |
-|58|           |   PD11 |
+|58| Touch-INT |   PD11 |
 |59|   FPGA-40 |   PD12 |
 |60|     CS_U9 |   PD13 |
 |61|           |   PD14 |
 |62|           |   PD15 |
-|63|           |    PC6 |
+|63| Touch-RST |    PC6 |
 |64|   FPGA-39 |    PC7 |
 |65|      SD-7 | PC8/SDIO_D0 |
 |66|      SD-8 | PC9/SDIO_D1 |
@@ -241,3 +241,11 @@ Looks like an STM32 clone from GigaDevice.
 |      Name |      D2 |      D3 |      CMD | +V |     CLK | GND |      D0 |      D1 | Det |
 | MCU pin # |      78 |      79 |       83 |    |      80 |     |      65 |      66 |  84 |
 |  MCU Name | SDIO_D2 | SDIO_D3 | SDIO_CMD |    | SDIO_CK |     | SDIO_D0 | SDIO_D1 | PD3 |
+
+
+**J3** - GT911 5-Point Capacitive Touch Controller
+|         # |        1 |        2 |    3|        4|        5|    6|
+|:---------:|:--------:|:--------:|:---:|:-------:|:-------:|:---:|
+|      Name |      SCL |      SDA | GND |     RST |     INT | VDD |
+| MCU pin # |       47 |       48 |     |      63 |      58 |     |
+|  MCU Name | I2C2_SCL | I2C2_SDA |     |     PC6 |    PD11 |     |
