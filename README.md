@@ -158,10 +158,10 @@ Looks like an STM32 clone from GigaDevice.
 |35| FPGA-8 |  PB0 |
 |36| FPGA-9 |  PB1 |
 |37| FPGA-10| BOOT1/PB2 |
-|38|        |  PE7 |
-|39|        |  PE8 |
-|40|        |  PE9 |
-|41|        | PE10 |
+|38| LCD-D4 |  PE7/FSMC_D4 |
+|39| LCD-D5 |  PE8/FSMC_D5 |
+|40| LCD-D6 |  PE9/FSMC_D6 |
+|41| LCD-D7 | PE10/FSMC_D7 |
 |42|        | PE11 |
 |43|        | PE12 |
 |44|        | PE13 |
@@ -176,14 +176,14 @@ Looks like an STM32 clone from GigaDevice.
 |52| U9,10 CLK |SPI2_SCK|
 |53| U9,10 DO  |SPI2_MISO|
 |54| U9,10 DI  |SPI2_MOSI|
-|55|           |    PD8 |
+|55|   LCD-RST |    PD8 |
 |56|           |    PD9 |
 |57|           |   PD10 |
 |58| Touch-INT |   PD11 |
 |59|   FPGA-40 |   PD12 |
 |60|     CS_U9 |   PD13 |
-|61|           |   PD14 |
-|62|           |   PD15 |
+|61|    LCD-D0 |   PD14/FSMC_D0 |
+|62|    LCD-D1 |   PD15/FSMC_D1 |
 |63| Touch-RST |    PC6 |
 |64|   FPGA-39 |    PC7 |
 |65|      SD-7 | PC8/SDIO_D0 |
@@ -203,14 +203,14 @@ Looks like an STM32 clone from GigaDevice.
 |78|    SD-1 | PC10/SDIO_D2 |
 |79|    SD-2 | PC11/SDIO_D3 |
 |80|    SD-5 | PC12/SDIO_CK |
-|81|         | PD0 |
-|82|         | PD1 |
+|81|  LCD-D2 | PD0/FSMC_D2 |
+|82|  LCD-D3 | PD1/FSMC_D3 |
 |83|    SD-3 | PD2/SDIO_CMD |
 |84|    SD-9 | PD3 |
-|85|         | PD4 |
-|86|         | PD5 |
+|85|  LCD-RD | PD4 |
+|86|  LCD-WR | PD5 |
 |87|         | PD6 |
-|88|         | PD7 |
+|88|  LCD-CS | PD7 |
 |89| FPGA-35 | PB3 |
 |90| FPGA-34 | PB4 |
 |91| FPGA-32 | PB5 |
@@ -249,3 +249,12 @@ Looks like an STM32 clone from GigaDevice.
 |      Name |      SCL |      SDA | GND |     RST |     INT | VDD |
 | MCU pin # |       47 |       48 |     |      63 |      58 |     |
 |  MCU Name | I2C2_SCL | I2C2_SDA |     |     PC6 |    PD11 |     |
+
+
+
+**J2** - micro SD slot
+|         # |   1 |   2 |     3|    4|   5|   6|   7|   8|      9|    10 |    11 |    12 |    13 |    14 |    15 |    16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
+|:---------:|:---:|:---:|:----:|:---:|:--:|:--:|:--:|:--:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|      Name | Vdd | GND | LED+ | RST | CS | RS | WR | RD |    D0 |    D1 |    D2 |    D3 |    D4 |    D5 |    D6 |    D7 | D8 | D9 | D10| D11| D12| D13| D14| D15|
+| MCU pin # |     |     |      |  55 | 88 |    | 86 | 85 |    61 |    62 |    81 |    82 |    38 |    39 |    40 |    41 |    |    |    |    |    |    |    |    |
+|  MCU Name |     |     |      | PD8 | PD7|    | PD5| PD4|FSMC_D0|FSMC_D1|FSMC_D2|FSMC_D3|FSMC_D4|FSMC_D5|FSMC_D6|FSMC_D7|    |    |    |    |    |    |    |    |
